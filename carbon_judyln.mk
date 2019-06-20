@@ -36,7 +36,7 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
-		DEVICE_MAINTAINERS="LlamaMonster"
+    DEVICE_MAINTAINERS="LlamaMonster"
 
 PRODUCT_NAME := carbon_judyln
 PRODUCT_DEVICE := judyln
