@@ -30,7 +30,7 @@ BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/vendor.img
 #BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/boot.img
 
 # Match the security patch with devices fingerprint to pass SafetyNet
-PLATFORM_SECURITY_PATCH := 2019-05-01
+#PLATFORM_SECURITY_PATCH := 2019-05-01
 
 #Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
