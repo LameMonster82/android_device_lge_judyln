@@ -32,8 +32,8 @@ BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/vendor.img
 # Match the security patch with devices fingerprint to pass SafetyNet
 PLATFORM_SECURITY_PATCH := 2019-05-01
 
-#fstab
+#Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 
-# inherit from the proprietary version
--include vendor/lge/judyln/BoardConfigVendor.mk
+# Inherit from the proprietary version
+$(call inherit-product-if-exists,  vendor/lge/judyln/BoardConfigVendor.mk)

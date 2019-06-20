@@ -22,7 +22,7 @@
 # definition file).
 #
 
-# even when the device released with o it has full compatibility with p 
+# even when the device released with o it has full compatibility with p
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 LOCAL_PATH := device/lge/judyln
@@ -33,7 +33,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
-    
+
 # Postinstall script
 # Use vendor instead of boot because boot can't be mounted
 
@@ -42,14 +42,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/boot_replace.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/boot_replace.sh \
     $(LOCAL_PATH)/boot.img:$(TARGET_COPY_OUT_SYSTEM)/bin/boot.img
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
-    
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qti-telephony-common.jar \
@@ -71,4 +71,4 @@ TARGET_SCREEN_WIDTH := 1440
 $(call inherit-product, device/lge/sdm845-common/common.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/lge/judyln/judyln-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/judyln/judyln-vendor.mk)
