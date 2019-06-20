@@ -31,7 +31,7 @@ TARGET_USE_JELLY := true
 # Inherit Carbon GSM telephony parts
 $(call inherit-product, vendor/carbon/config/gsm.mk)
 
-# Inherit some common Descendant stuff.
+# Inherit some common C(6) stuff.
 $(call inherit-product, vendor/carbon/config/common.mk)
 
 # Maintainer Prop
