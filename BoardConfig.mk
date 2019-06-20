@@ -36,4 +36,4 @@ PLATFORM_SECURITY_PATCH := 2019-05-01
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 
 # Inherit from the proprietary version
-$(call inherit-product-if-exists,  vendor/lge/judyln/BoardConfigVendor.mk)
+-include vendor/lge/judyln/BoardConfigVendor.mk
