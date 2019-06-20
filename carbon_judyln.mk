@@ -35,8 +35,8 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 $(call inherit-product, vendor/carbon/config/common.mk)
 
 # Maintainer Prop
-#PRODUCT_BUILD_PROP_OVERRIDES += \
-#DEVICE_MAINTAINERS="Akash Srivastava"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+		DEVICE_MAINTAINERS="LlamaMonster"
 
 PRODUCT_NAME := carbon_judyln
 PRODUCT_DEVICE := judyln
