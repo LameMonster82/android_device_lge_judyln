@@ -43,9 +43,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/boot_replace.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/boot_replace.sh \
-    $(LOCAL_PATH)/boot.img:$(TARGET_COPY_OUT_SYSTEM)/bin/boot.img
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/boot_replace.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/boot_replace.sh \
+#    $(LOCAL_PATH)/boot.img:$(TARGET_COPY_OUT_SYSTEM)/bin/boot.img
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
