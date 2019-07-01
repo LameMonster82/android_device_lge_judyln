@@ -50,7 +50,7 @@
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">100</integer>
-    
+
         <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -375,10 +375,10 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">26.859985dip</dimen>
     <dimen name="status_bar_height_landscape">26.859985dip</dimen>
-    
+
     <!-- Screen off delay -->
-    <integer name="config_screen_off_delay">1800</integer>
-    
+    <integer name="config_screen_off_delay">0</integer>
+
     <!-- Ultra brightness mode -->
     <integer name="config_lux_hl_mode_off">10000</integer>
     <integer name="config_lux_hl_mode_on">30000</integer>
