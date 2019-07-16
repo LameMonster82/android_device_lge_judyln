@@ -59,6 +59,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
 
+# Framework files
+PRODUCT_COPY_FILES += \
+	  $(LOCAL_PATH)/prebuilt/boot-QPerformance.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/boot-QPerformance.vdex \
+		$(LOCAL_PATH)/prebuilt/boot-UxPerformance.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/boot-UxPerformance.vdex
+
+# FM Radio
+PRODUCT_COPY_FILES += \
+		$(LOCAL_PATH)/prebuilt/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal large xlarge
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
