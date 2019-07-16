@@ -383,4 +383,7 @@
     <integer name="config_lux_hl_mode_off">10000</integer>
     <integer name="config_lux_hl_mode_on">30000</integer>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">false</bool>
+
 </resources>
