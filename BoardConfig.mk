@@ -25,6 +25,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # Kernel
 TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
+#TARGET_PREBUILT_KERNEL := device/lge/judyln/prebuilt/zImage
 
 # Recommended vendor image to be used: https://drive.google.com/open?id=1c_y474Ya1f_sFSZQEspkBulT54o5DyC7
 # Place it in 'device/lge/judyln'
@@ -33,6 +34,8 @@ BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/vendor.img
 
 # Match the security patch with devices fingerprint to pass SafetyNet
 #PLATFORM_SECURITY_PATCH := 2019-05-01
+
+DEVICE_MANIFEST_FILE := device/lge/judyln/manifest.xml
 
 #Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
