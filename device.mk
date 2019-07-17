@@ -50,27 +50,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
 
-# QTI
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qti-telephony-common.jar \
-    $(LOCAL_PATH)/prebuilt/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/QtiTelephonyServicelibrary.jar
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
 
-# Framework files
-PRODUCT_COPY_FILES += \
-	  $(LOCAL_PATH)/prebuilt/boot-QPerformance.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/boot-QPerformance.vdex \
-		$(LOCAL_PATH)/prebuilt/boot-UxPerformance.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/boot-UxPerformance.vdex
-
-# FM Radio
-PRODUCT_COPY_FILES += \
-		$(LOCAL_PATH)/prebuilt/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so
-
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal large xlarge
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := 560dpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Resiolution
 TARGET_SCREEN_HEIGHT := 3120
