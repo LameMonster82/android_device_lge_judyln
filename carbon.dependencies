@@ -3,5 +3,10 @@
    "repository" : "LameMonster82/android_device_lge_sdm845-common",
    "target_path": "device/lge/sdm845-common",
    "revision"   : "master"
+ },
+ {
+   "repository" : "LameMonster82/platform_vendor_lge",
+   "target_path": "vendor/lge",
+   "revision"   : "master"
  }
 ]
