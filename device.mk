@@ -34,19 +34,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
-# Postinstall script
-# Use vendor instead of boot because boot can't be mounted
-
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
-
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/boot_replace.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/boot_replace.sh \
-#    $(LOCAL_PATH)/boot.img:$(TARGET_COPY_OUT_SYSTEM)/bin/boot.img
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
