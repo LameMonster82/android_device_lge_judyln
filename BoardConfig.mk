@@ -27,7 +27,7 @@ TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 #TARGET_PREBUILT_KERNEL := device/lge/judyln/prebuilt/zImage
 
-# Recommended vendor image to be used: https://drive.google.com/open?id=1c_y474Ya1f_sFSZQEspkBulT54o5DyC7
+# Recommended vendor image to be used: https://drive.google.com/open?id=1wKjsVeCc8QC7nDOSOxSEuPz4QmS8RCnA
 # Place it in 'device/lge/judyln'
 BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/vendor.img
 #BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/boot.img
