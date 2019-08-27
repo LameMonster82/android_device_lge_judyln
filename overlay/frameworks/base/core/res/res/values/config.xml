@@ -28,11 +28,11 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">184</integer>
+    <integer name="config_screenBrightnessSettingDefault">100</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -72,8 +72,8 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>4</item>
+        <item>3</item>
+        <item>6</item>
         <item>12</item>
         <item>20</item>
         <item>40</item>
@@ -104,8 +104,8 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>3.5077</item>
-        <item>6.8394</item>
+        <item>4.5077</item>
+        <item>7.8394</item>
         <item>15.2619</item>
         <item>30.2619</item>
         <item>40.671</item>
@@ -370,7 +370,14 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-	<string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 L -72, 0 L -72, 26.86 L 72, 26.86 L 72, 0 Z @dp</string>
+	<string translatable="false" name="config_mainBuiltInDisplayCutout">
+    M 0,0
+    L -72, 0
+    L -72, 26.86
+    L 72, 26.86
+    L 72, 0
+    Z @dp
+  </string>
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">26.859985dip</dimen>
