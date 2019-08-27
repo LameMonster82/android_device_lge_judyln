@@ -26,13 +26,13 @@
     <bool name="config_maskMainBuiltInDisplayCutout">true</bool>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">28dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="status_bar_height_portrait">26.859985dip</dimen>
+    <dimen name="status_bar_height_landscape">26.859985dip</dimen>
     <dimen name="rounded_corner_radius_top">60px</dimen>
 
     <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">6</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
+    <integer name="config_maxVisibleNotificationIcons">3</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">3</integer>
 
 
 </resources>
