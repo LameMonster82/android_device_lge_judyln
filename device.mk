@@ -21,9 +21,7 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
-
-# even when the device released with o it has full compatibility with p
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 LOCAL_PATH := device/lge/judyln
 
