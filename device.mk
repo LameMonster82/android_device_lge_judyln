@@ -32,6 +32,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Judyln specific features
+PRODUCT_PACKAGES += \
+		init.judyln.rc
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.judyln
