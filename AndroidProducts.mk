@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/carbon_judyln.mk
+
+COMMON_LUNCH_CHOICES := \
+    carbon_judyln-userdebug \
+		carbon_judyln-eng
