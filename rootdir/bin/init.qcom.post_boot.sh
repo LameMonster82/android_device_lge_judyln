@@ -3569,6 +3569,12 @@ case "$target" in
         # to one of the CPU from the default IRQ affinity mask.
         echo f > /proc/irq/default_smp_affinity
 
+        # msm_drm
+        echo 2 > /proc/irq/7/smp_affinity_list
+
+        # kgsl-3d0
+        echo 1 > /proc/irq/496/smp_affinity_list
+
 	# Core control parameters
 	echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
 	echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
