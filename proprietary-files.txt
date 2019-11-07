@@ -189,6 +189,12 @@ vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 
+# Camera - configs
+vendor/etc/camera/iqm/fc4_awb.dlc
+vendor/etc/camera/iqm/wb_graph_imx351.pb
+vendor/etc/camera/iqm/wb_graph_imx351w.pb
+vendor/etc/camera/iqm/wb_graph_imx363.pb
+
 # Camera - Sensor
 vendor/lib/camera/com.qti.sensor.imx351.so
 vendor/lib/camera/com.qti.sensor.imx363.so
