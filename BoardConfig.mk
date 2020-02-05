@@ -31,8 +31,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
-#TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
-TARGET_KERNEL_CONFIG := judypn_lao_com-perf_defconfig
+TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
@@ -51,7 +50,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2019-11-01
+VENDOR_SECURITY_PATCH := 2020-01-01
 
 # inherit from the proprietary version
 -include vendor/lge/judypn/BoardConfigVendor.mk
