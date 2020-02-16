@@ -31,7 +31,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
-TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
+TARGET_KERNEL_CONFIG := judypn_lao_com-perf_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
