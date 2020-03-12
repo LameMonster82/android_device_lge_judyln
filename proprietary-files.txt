@@ -308,13 +308,11 @@ vendor/lib64/hw/fingerprint.sdm845.so
 vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libfpfactory.so
-vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_algo.so
 vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/libfpfactory.so
-vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
 
@@ -391,6 +389,35 @@ vendor/etc/wifi/NA_CDMA/bdwlan_ch1.bin
 vendor/etc/wifi/NA_GSM/bdwlan.bin
 vendor/etc/wifi/NA_GSM/bdwlan_ch0.bin
 vendor/etc/wifi/NA_GSM/bdwlan_ch1.bin
+
+# Wifi
+vendor/bin/hw/wlan_ril
+vendor/bin/cnss-daemon
+vendor/bin/fstman
+vendor/bin/hw/vendor.lge.hardware.wifi.hal@1.0-service
+vendor/etc/init/android.hardware.wifi@1.0-service.rc
+vendor/etc/init/vendor.lge.hardware.wifi.hal@1.0-service.rc
+vendor/lib64/libdiagd_client_qca.so
+vendor/lib64/libril_wrapper.so
+vendor/lib64/libwfcu.so
+vendor/lib64/vendor.lge.hardware.wifi.hal@1.0.so
+vendor/lib64/vendor.lge.hardware.wifi.hostapd@1.0.so
+vendor/lib64/vendor.lge.hardware.wifi.supplicant@1.0.so
+vendor/lib64/vendor.lge.hardware.wifi.supplicant@2.0.so
+
+# Wifi - Wigig
+vendor/bin/wigighalsvc
+vendor/bin/wigignpt
+system/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+system/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+system/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+
+# Wifi - Wigig - Configs
+vendor/etc/wifi/wigig_p2p_supplicant.conf
+vendor/etc/wifi/wigig_supplicant.conf
 
 # FM Radio
 lib64/fm_helium.so
