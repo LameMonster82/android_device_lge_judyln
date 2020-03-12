@@ -23,6 +23,9 @@
 namespace {
 using android::hardware::light::V2_0::LightState;
 
+#define LCD_BRIGHTNESS_MAX 4096
+#define LCD_BRIGHTNESS_FACTOR (LCD_BRIGHTNESS_MAX / 255)
+
 static uint32_t rgbToBrightness(const LightState& state) {
     uint32_t color = state.color & 0x00ffffff;
     return ((77 * ((color >> 16) & 0xff)) + (150 * ((color >> 8) & 0xff)) +
@@ -40,7 +43,8 @@ namespace light {
 namespace V2_0 {
 namespace implementation {
 
-Light::Light(std::ofstream&& backlight, std::ofstream&& emotionalBlinkPattern, std::ofstream&& emotionalOnOffPattern) :
+Light::Light(std::ofstream&& HLTrigger, std::ofstream&& backlight, std::ofstream&& emotionalBlinkPattern, std::ofstream&& emotionalOnOffPattern) :
+    mHLTrigger(std::move(HLTrigger)),
     mBacklight(std::move(backlight)),
     mEmotionalBlinkPath(std::move(emotionalBlinkPattern)),
     mEmotionalOnOffPath(std::move(emotionalOnOffPattern)) {
@@ -81,8 +85,13 @@ void Light::setAttentionLight(const LightState& state) {
 
 void Light::setBacklight(const LightState& state) {
     std::lock_guard<std::mutex> lock(mLock);
-    uint32_t brightness = rgbToBrightness(state) * 16;
+    uint32_t brightness = rgbToBrightness(state) * LCD_BRIGHTNESS_FACTOR;
     mBacklight << brightness << std::endl;
+    if (brightness >= LCD_BRIGHTNESS_MAX - LCD_BRIGHTNESS_FACTOR -1) {
+        mHLTrigger << 1 << std::endl;
+    } else {
+        mHLTrigger << 0 << std::endl;
+    }
 }
 
 void Light::setBatteryLight(const LightState& state) {
