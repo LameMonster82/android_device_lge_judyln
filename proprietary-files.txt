@@ -1,4 +1,33 @@
 # Audio
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
+
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+
+vendor/etc/acdbdata/v1/General_cal.acdb
+vendor/etc/acdbdata/v1/Global_cal.acdb
+vendor/etc/acdbdata/v1/Bluetooth_cal.acdb
+vendor/etc/acdbdata/v1/Headset_cal.acdb
+vendor/etc/acdbdata/v1/Hdmi_cal.acdb
+vendor/etc/acdbdata/v1/Codec_cal.acdb
+vendor/etc/acdbdata/v1/Speaker_cal.acdb
+vendor/etc/acdbdata/v1/Handset_cal.acdb
+
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -374,6 +403,8 @@ vendor/firmware/libpn553_fw_64.so:vendor/lib64/libpn553_fw_64.so
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # Firmware (Wifi)
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/wifi/bdwlan.bin
 vendor/etc/wifi/bdwlan_ch0.bin
 vendor/etc/wifi/bdwlan_ch1.bin
@@ -395,7 +426,6 @@ vendor/bin/hw/wlan_ril
 vendor/bin/cnss-daemon
 vendor/bin/fstman
 vendor/bin/hw/vendor.lge.hardware.wifi.hal@1.0-service
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/vendor.lge.hardware.wifi.hal@1.0-service.rc
 vendor/lib64/libdiagd_client_qca.so
 vendor/lib64/libril_wrapper.so
@@ -404,6 +434,9 @@ vendor/lib64/vendor.lge.hardware.wifi.hal@1.0.so
 vendor/lib64/vendor.lge.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.lge.hardware.wifi.supplicant@1.0.so
 vendor/lib64/vendor.lge.hardware.wifi.supplicant@2.0.so
+
+# Wifi - Configs
+vendor/etc/wifi/PerProviderSubscription.conf
 
 # Wifi - Wigig
 vendor/bin/wigighalsvc
@@ -418,6 +451,7 @@ vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 # Wifi - Wigig - Configs
 vendor/etc/wifi/wigig_p2p_supplicant.conf
 vendor/etc/wifi/wigig_supplicant.conf
+vendor/etc/wifi/fstman.ini
 
 # FM Radio
 lib64/fm_helium.so
