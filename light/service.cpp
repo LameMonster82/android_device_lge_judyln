@@ -29,19 +29,11 @@ using android::hardware::joinRpcThreadpool;
 using android::hardware::light::V2_0::ILight;
 using android::hardware::light::V2_0::implementation::Light;
 
-const static std::string kHLTriggerPath = "/sys/class/panel/brightness/hl_mode";
 const static std::string kBacklightPath = "/sys/class/leds/wled/brightness";
 const static std::string kEmotionalBlinkPath = "/sys/class/lg_rgb_led/use_patterns/blink_patterns";
 const static std::string kEmotionalOnOffPath = "/sys/class/lg_rgb_led/use_patterns/onoff_patterns";
 
 int main() {
-    std::ofstream HLTrigger(kHLTriggerPath);
-    if (!HLTrigger) {
-        int error = errno;
-        ALOGE("Failed to open %s (%d): %s", kHLTriggerPath.c_str(), error, strerror(error));
-        return -error;
-    }
-
     std::ofstream backlight(kBacklightPath);
     if (!backlight) {
         int error = errno;
@@ -63,7 +55,7 @@ int main() {
         return -error;
     }
 
-    android::sp<ILight> service = new Light(std::move(HLTrigger), std::move(backlight), std::move(emotionalBlinkPattern), std::move(emotionalOnOffPattern));
+    android::sp<ILight> service = new Light(std::move(backlight), std::move(emotionalBlinkPattern), std::move(emotionalOnOffPattern));
 
     configureRpcThreadpool(1, true);
 

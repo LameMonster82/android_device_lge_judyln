@@ -31,7 +31,7 @@ namespace V2_0 {
 namespace implementation {
 
 struct Light : public ILight {
-    Light(std::ofstream&& HLTrigger, std::ofstream&& backlight, std::ofstream&& emotionalBlinkPattern, std::ofstream&& emotionalOnOffPattern);
+    Light(std::ofstream&& backlight, std::ofstream&& emotionalBlinkPattern, std::ofstream&& emotionalOnOffPattern);
 
     // Methods from ::android::hardware::light::V2_0::ILight follow.
     Return<Status> setLight(Type type, const LightState& state)  override;
@@ -45,7 +45,6 @@ private:
     void checkLightStateLocked();
     void setLightLocked(const LightState& state);
 
-    std::ofstream mHLTrigger;
     std::ofstream mBacklight;
     std::ofstream mEmotionalBlinkPath;
     std::ofstream mEmotionalOnOffPath;
