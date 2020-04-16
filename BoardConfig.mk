@@ -25,10 +25,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
-# HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
 TARGET_KERNEL_CONFIG := judypn_lao_com-perf_defconfig
