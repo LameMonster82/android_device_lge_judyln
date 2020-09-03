@@ -3,13 +3,12 @@
 #
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.lge.aux.camera=2 \
-    vendor.lge.faceprint.use.camera=0
+ro.vendor.lge.aux.camera=2
+vendor.lge.faceprint.use.camera=0
+vendor.camera.aux.physical=5
 
 # Misc
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.lge.build.target_country=COM \
-    ro.vendor.lge.build.target_operator=LAO \
-    ro.vendor.lge.capp_cupss.rootdir=/oem/OP \
-    ro.vendor.lge.swversion=V40520e
+ro.vendor.lge.build.target_country=COM
+ro.vendor.lge.build.target_operator=LAO
+ro.vendor.lge.capp_cupss.rootdir=/oem/OP
+ro.vendor.lge.swversion=V40530b
