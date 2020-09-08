@@ -219,20 +219,15 @@ vendor/lib/camera/com.qti.tuned.sl846.bin
 vendor/lib/camera/com.qti.tuned.sl846_tmus.bin
 
 # Configstore
-vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/vendor.lge.hardware.configstore@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # Crypto
-vendor/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service
-vendor/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc
 vendor/lib64/libcpion.so
 vendor/lib64/libfpfactory-impl.so
 vendor/lib64/libGPQTEEC_vendor.so
@@ -248,7 +243,6 @@ vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libsi.so
 vendor/lib64/libunified_sysfs_vendor.so
-vendor/lib/hw/vendor.lge.hardware.lgatcmd@1.0-impl.so
 vendor/lib/libatd_common.so
 vendor/lib/libatd_corelib.so
 vendor/lib/libatd_modeminterface.so
@@ -271,7 +265,6 @@ vendor/lib/libsi.so
 vendor/lib/libunified_sysfs_vendor.so
 vendor/lib/libwvoemprov.so
 vendor/lib/vendor.lge.hardware.filehandle@1.0.so
-vendor/lib/vendor.lge.hardware.lgatcmd@1.0.so
 
 # DRM
 product/lib/vendor.qti.hardware.qseecom@1.0.so
