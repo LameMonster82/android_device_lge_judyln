@@ -17,9 +17,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/judypn/judypn-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/judyln/judyln-vendor.mk)
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/judyln
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -33,7 +33,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
-    $(DEVICE_PATH)/audio/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml \
     $(DEVICE_PATH)/audio/audio_effects_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_tune.xml \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(DEVICE_PATH)/audio/audio_platform_info_mono.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_mono.xml \
@@ -46,7 +45,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.judypn:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.judypn
+    $(DEVICE_PATH)/rootdir/etc/fstab.judyln:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.judyln
 
 $(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))

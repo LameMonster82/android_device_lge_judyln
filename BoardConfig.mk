@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/judyln
 
 # inherit from common v30
 -include device/lge/sdm845-common/BoardConfigCommon.mk
@@ -26,8 +26,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
-TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
+BOARD_KERNEL_CMDLINE +=	androidboot.selinux=permissive
+TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
@@ -36,10 +37,10 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 # Recovery
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judypn
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-07-01
 
 # inherit from the proprietary version
--include vendor/lge/judypn/BoardConfigVendor.mk
+-include vendor/lge/judyln/BoardConfigVendor.mk

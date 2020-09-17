@@ -1,5 +1,5 @@
 #
-# vendor props for judypn
+# vendor props for judyln
 #
 
 # Camera
@@ -11,4 +11,4 @@ vendor.camera.aux.physical=5
 ro.vendor.lge.build.target_country=COM
 ro.vendor.lge.build.target_operator=LAO
 ro.vendor.lge.capp_cupss.rootdir=/oem/OP
-ro.vendor.lge.swversion=V40530b
+ro.vendor.lge.swversion=G71030b

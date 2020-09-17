@@ -39,3 +39,5 @@ on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko
 
+on init
+    setprop sys.usb.configfs 1
