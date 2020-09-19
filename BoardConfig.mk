@@ -28,7 +28,7 @@ TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 BOARD_KERNEL_CMDLINE +=	androidboot.selinux=permissive
-TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
+TARGET_KERNEL_CONFIG := lineageos_judyln_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
